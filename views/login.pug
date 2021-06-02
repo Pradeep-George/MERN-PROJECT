@@ -1,0 +1,21 @@
+doctype html
+link(rel='stylesheet' href='css/style.css')
+.login-wrap
+  .login-html
+    input#tab-1.sign-in(type='radio' name='tab' checked='')
+    label.tab(for='tab-1') Sign In
+    
+    .login-form
+      .sign-in-htm
+        form(action='/loginsub' method='POST' name='myform')
+          .group
+            label.label(for='user') Username
+            input.input(name='user' type='text')
+          .group
+            label.label(for='pass') Password
+            input.input(name='pass' type='password' data-type='password')
+          .group
+            input.button(type='submit' value='Sign In')
+          .hr
+          
+      
