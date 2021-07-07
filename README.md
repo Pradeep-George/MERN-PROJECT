@@ -1,3 +1,1 @@
-# MERN-PROJECT
-Food Ordering System
-
+# food-order
