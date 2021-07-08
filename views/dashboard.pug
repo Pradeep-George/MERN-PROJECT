@@ -88,13 +88,24 @@ head
           #ui-basic.collapse
             ul.nav.flex-column.sub-menu
               li.nav-item
-                a.nav-link(href='/') Add Category
+               a.nav-link(href='/admin/productcat/add-productcat') Add Category
               li.nav-item
-                a.nav-link(href='/') View Category
+                a.nav-link(href='/admin/productcat/view-productcat') View Category
               li.nav-item
-                a.nav-link(href='/') Add Product
+                a.nav-link(href='/admin/product/add-product') Add Product
               li.nav-item
-                a.nav-link(href='/') View Product  
+                a.nav-link(href='/admin/product/view-product') View Product  
+        li.nav-item
+          a.nav-link(data-toggle='collapse' href='#ui-order' aria-expanded='false' aria-controls='ui-order')
+            i.icon-layout.menu-icon
+            span.menu-title Order
+            i.menu-arrow
+          #ui-order.collapse
+            ul.nav.flex-column.sub-menu
+            
+              li.nav-item
+                a.nav-link(href='/admin/order/view-orders') View Orders        
+        
         li.nav-item
           a.nav-link(data-toggle='collapse' href='#auth' aria-expanded='false' aria-controls='auth')
             i.icon-head.menu-icon
@@ -103,9 +114,9 @@ head
           #auth.collapse
             ul.nav.flex-column.sub-menu
               li.nav-item
-                a.nav-link(href='/')  Add User 
+                a.nav-link(href='/admin/user/add-user')  Add User 
               li.nav-item
-                a.nav-link(href='/')  Manage User         
+                a.nav-link(href='/admin/user/view-users')  Manage User         
     // partial
     .main-panel
       .content-wrapper

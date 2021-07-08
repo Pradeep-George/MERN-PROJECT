@@ -1,0 +1,82 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  title Foodee Admin
+  // plugins:css
+  link(rel='stylesheet' href='../../vendors/feather/feather.css')
+  link(rel='stylesheet' href='../../vendors/ti-icons/css/themify-icons.css')
+  link(rel='stylesheet' href='../../vendors/css/vendor.bundle.base.css')
+  // endinject
+  // Plugin css for this page
+  link(rel='stylesheet' href='../../vendors/select2/select2.min.css')
+  link(rel='stylesheet' href='../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css')
+  // End plugin css for this page
+  // inject:css
+  link(rel='stylesheet' href='../../css/vertical-layout-light/style.css')
+  // endinject
+  link(rel='shortcut icon' href='../../images/favicon.png')
+.container-scroller
+  .container-fluid.page-body-wrapper
+    .main-panel
+      .content-wrapper
+        .row
+          .col-12.grid-margin.stretch-card
+            .card
+              .card-body
+                h4.card-title Add New User
+                form.forms-sample
+                  .form-group
+                    label(for='exampleInputName1') Name
+                    input#exampleInputName1.form-control(type='text' placeholder='Name')
+                  .form-group
+                    label(for='exampleInputEmail3') Email address
+                    input#exampleInputEmail3.form-control(type='email' placeholder='Email')
+                  .form-group
+                    label(for='exampleInputPassword4') Password
+                    input#exampleInputPassword4.form-control(type='password' placeholder='Password')
+                  .form-group
+                    label(for='exampleSelectGender') Gender
+                    select#exampleSelectGender.form-control
+                      option Male
+                      option Female
+                  .form-group
+                    label(for='exampleInputCity1') City
+                    input#exampleInputCity1.form-control(type='text' placeholder='Location')
+                  button.btn.btn-primary.mr-2(type='submit') Submit
+                  button.btn.btn-light Cancel
+      // content-wrapper ends
+      // partial:../../partials/_footer.html
+      footer.footer
+        .d-sm-flex.justify-content-center.justify-content-sm-between
+          span.text-muted.text-center.text-sm-left.d-block.d-sm-inline-block
+            | Copyright &copy; 2021.  Premium 
+            a(href='https://www.bootstrapdash.com/' target='_blank') Bootstrap admin template
+            |  from BootstrapDash. All rights reserved.
+          span.float-none.float-sm-right.d-block.mt-1.mt-sm-0.text-center
+            | Hand-crafted &amp; made with 
+            i.ti-heart.text-danger.ml-1
+      // partial
+    // main-panel ends
+  // page-body-wrapper ends
+// container-scroller
+// plugins:js
+script(src='../../vendors/js/vendor.bundle.base.js')
+// endinject
+// Plugin js for this page
+script(src='../../vendors/typeahead.js/typeahead.bundle.min.js')
+script(src='../../vendors/select2/select2.min.js')
+// End plugin js for this page
+// inject:js
+script(src='../../js/off-canvas.js')
+script(src='../../js/hoverable-collapse.js')
+script(src='../../js/template.js')
+script(src='../../js/settings.js')
+script(src='../../js/todolist.js')
+// endinject
+// Custom js for this page
+script(src='../../js/file-upload.js')
+script(src='../../js/typeahead.js')
+script(src='../../js/select2.js')
+// End custom js for this page
